@@ -17,6 +17,8 @@
 \thispagestyle{empty}
 \tableofcontents
 \thispagestyle{empty}
+\listoffigures
+\thispagestyle{empty}
 \newpage
 \pagenumbering{arabic}
 %\thispagestyle{empty}
@@ -32,17 +34,66 @@ Aquestes tècniques són molt importants per als models de predicció, ja que pe
 Mentre un enginyer de dades treballa en el desenvolupament, construcció, prova i manteniment d'arquitectures, un científic de dades és una persona que es dedica a obtenir informació rellevant sobre les dades, a partir de preguntes que s'ha plantejat, i a transmetre aquesta informació de manera senzilla. A més, tot i que ambdós perfils tenen coneixements de programació, l'enginyer de dades no aprofundeix tant en coneixements d'estadística i matemàtiques com el científic de dades.\\
 \href{https://www.linkedin.com/jobs/search/?currentJobId=4167044480&geoId=104738515&keywords=data%20scientist&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true}{\underline{Oferta de \textit{data scientist}}}\\
 \href{https://www.linkedin.com/jobs/search/?currentJobId=4172639382&geoId=104738515&keywords=data%20engineer&origin=JOB_SEARCH_PAGE_SEARCH_BUTTON&refresh=true}{\underline{Oferta de \textit{data engineer}}}
-
 \subsection*{Pregunta 3}
 \addcontentsline{toc}{subsection}{Pregunta 3}
-
+Les set tasques que permeten un major nivell d'abstracció en la visualització de dades són:
+\begin{itemize}
+    \item Panorama general $\rightarrow$ Permet una visió general de les dades.
+    \item Acostament $\rightarrow$ Permet l'acostament a un punt concret.
+    \item Filtratge $\rightarrow$ Permet filtrar els elements que no són d'interès.
+    \item Detalls a petició $\rightarrow$ Permet obtenir detalls sobre un element o grup d'elements.
+    \item Relacions $\rightarrow$ Permet la visualització de tendències entre diferents elements.
+    \item Historial $\rightarrow$ Permet revisar/repetir passos anteriors.
+    \item Extracció $\rightarrow$ Permet l'extracció de subconjunts i els seus detalls.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.2]{images/dashboard_ventas.png}
+    \caption{Exemple de la tasca "Panorama general"}
+    \label{fig:panorama_general}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.8]{images/zoom.png}
+    \caption{Exemple de la tasca "Zoom"}
+    \label{fig:zoom}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[scale = 0.7]{images/filtro.png}
+    \caption{Exemple de la tasca "Filtratge"}
+    \label{fig:filtratge}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[scale =1.3]{images/8aa21944eef2879cea9080a2ae2fbcb98cec0ddf.png}
+    \caption{Exemple de la tasca "Relcions"}
+    \label{fig:relacions}
+\end{figure}
+\newpage
 \subsection*{Pregunta 4}
 \addcontentsline{toc}{subsection}{Pregunta 4}
-
+La primera etapa és la captura, que té com a objectiu la recol·lecció de les dades que es generen en un procés. Un exemple d'aquesta etapa podria ser, les dades d'un sensor IoT que recol·lecta un broker de Kafka.\\
+La segona etapa és l'emmagatzematge, que té com a objectiu guardar les dades capturades en un format tal que sigui adequat per a la posterior explotació. L'exemple en aquest cas, seria l'emmagatzemament de les lectures del sensor IoT en una base de dades.\\
+La a tercera etapa és el preprocessament, que té com a objectiu l'aplicació de diferents tècniques per a preparar les dades per la seva posterior anàlisi. L'exemple podria ser la neteja de les dades.\\
+La quarta etapa és l'anàlisi, que té com a objectiu crear models per explicar les dades. L'exemple seria construir un model de predicció de falles del sensor IoT.\\
+La penúltima etapa és la visualització que té com a objectiu presentar les dades. L'exemple seria un panell de PowerBI.\\
+Finalment, la publicació que documenta els resultats. L'exemple seria la redacció d'un \textit{report} amb els resultats obtinguts.
 \subsection*{Pregunta 5}
 \addcontentsline{toc}{subsection}{Pregunta 5}
-
+La millor opció per a un sistema de monitoratge ambiental basat en sensors seria una base de dades no relacional a causa del fet que els sensors poden generar dades molt diverses. És a dir els sensors poden generar dades de tipus text, numèriques, imatges, so, etc. Per tant, considerant aquesta gran varietat que deriva en diferents esquemes per cada sensor es considera una millor opció una base de dades no relacional gràcies a la seva flexibilitat amb els esquemes de les dades i els seus tipus. A més, cal destacar que aquest tipus de bases de dades tenen un elevat rendiment de lectura i escriptura. Per tant, en un sistema com aquest, que captura volums de dades molt grans, és important poder tant consultar com inserir noves dades de la manera més ràpida possible. Finalment, un altre motiu pel qual una base de dades NoSQL és una millor opció és la capacitat d'escalar horitzontalment. És a dir, la capacitat d'afegir més recursos per a poder treballar amb volums de dades majors que en les bases de dades relacionals.
 \subsection*{Pregunta 6}
 \addcontentsline{toc}{subsection}{Pregunta 6}
+
+
+\section*{Referències bibliogràfiques}
+\addcontentsline{toc}{section}{Referències bibliogràfiques}
+\begin{itemize}
+    \item \href{https://evotic.es/wp-content/uploads/2022/10/dashboard_ventas.png}{\underline{Imatge de l'exemple de "Panorama general"}}
+    \item \href{https://r-charts.com/es/correlacion/zoom-grafico_files/figure-html/zoom.png}{\underline{Imatge de l'exemple de "Zoom"}}
+    \item \href{https://cdn.exceltotal.com/wp-content/uploads/2014/02/filtros-en-excel-03.png}{\underline{Imatge de l'exemple de "Filtratge"}}
+    \item \href{https://cdn.kastatic.org/ka-perseus-images/8aa21944eef2879cea9080a2ae2fbcb98cec0ddf.png}{\underline{Imatge de l'exemple de "Relacions"}}
+    \item \href{https://www.arsys.es/blog/bases-de-datos-nosql-que-son-tipos-y-ventajas#tree-3}{\underline{Informació Bases de dades NoSQL}}
+\end{itemize}
 
 \end{document}
