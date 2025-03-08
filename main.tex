@@ -84,16 +84,20 @@ Finalment, la publicació que documenta els resultats. L'exemple seria la redacc
 La millor opció per a un sistema de monitoratge ambiental basat en sensors seria una base de dades no relacional a causa del fet que els sensors poden generar dades molt diverses. És a dir els sensors poden generar dades de tipus text, numèriques, imatges, so, etc. Per tant, considerant aquesta gran varietat que deriva en diferents esquemes per cada sensor es considera una millor opció una base de dades no relacional gràcies a la seva flexibilitat amb els esquemes de les dades i els seus tipus. A més, cal destacar que aquest tipus de bases de dades tenen un elevat rendiment de lectura i escriptura. Per tant, en un sistema com aquest, que captura volums de dades molt grans, és important poder tant consultar com inserir noves dades de la manera més ràpida possible. Finalment, un altre motiu pel qual una base de dades NoSQL és una millor opció és la capacitat d'escalar horitzontalment. És a dir, la capacitat d'afegir més recursos per a poder treballar amb volums de dades majors que en les bases de dades relacionals.
 \subsection*{Pregunta 6}
 \addcontentsline{toc}{subsection}{Pregunta 6}
+La primera llibreria és \href{https://pandas.pydata.org/docs/}{\underline{Pandas}}. Les seves funcionalitats clau són la lectura i escriptura de dades, la manipulació de dades, el tractament de \textit{nulls}, l'agrupació, fusió i combinació i el tractament i anàlisi de \textit{time series}. Aquesta llibreria conté una funció per eliminar duplicats (\href{https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop_duplicates.html}{\underline{\textit{drop\_duplicates()}}}), una funció que es pot usar per a corregir errates tipogràfiques, tot i que no està dissenyada específicament per això(\href{https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.replace.html}{\underline{\textit{replace()}}}) i una funció per a la conversió de formats (\href{https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.astype.html}{\underline{\textit{astype()}}}).
+La segona eina és \href{https://pyjanitor-devs.github.io/pyjanitor/}{\underline{PyJanitor}}. És una llibreria basada en Pandas, per tant, les seves funcionalitats se centren simplificar algunes operacions de Pandas. Per eliminar duplicats es pot utilitzar la funció \textit{remove\_na()}. Per corregir errors tipogràfics i transformar formats, aquesta llibreria, no implementa cap funcionalitat especifia. En conseqüència, aquestes dues operacions s'haurien de realitzar amb Pandas o amb terceres llibreries.
 
-
-\section*{Referències bibliogràfiques}
-\addcontentsline{toc}{section}{Referències bibliogràfiques}
+\section*{Bibliografia}
+\addcontentsline{toc}{section}{Bibliografia}
 \begin{itemize}
     \item \href{https://evotic.es/wp-content/uploads/2022/10/dashboard_ventas.png}{\underline{Imatge de l'exemple de "Panorama general"}}
     \item \href{https://r-charts.com/es/correlacion/zoom-grafico_files/figure-html/zoom.png}{\underline{Imatge de l'exemple de "Zoom"}}
     \item \href{https://cdn.exceltotal.com/wp-content/uploads/2014/02/filtros-en-excel-03.png}{\underline{Imatge de l'exemple de "Filtratge"}}
     \item \href{https://cdn.kastatic.org/ka-perseus-images/8aa21944eef2879cea9080a2ae2fbcb98cec0ddf.png}{\underline{Imatge de l'exemple de "Relacions"}}
     \item \href{https://www.arsys.es/blog/bases-de-datos-nosql-que-son-tipos-y-ventajas#tree-3}{\underline{Informació Bases de dades NoSQL}}
+    \item \href{https://iddigitalschool.com/bootcamps/que-es-pandas/#:~:text=Funcionalidades%20Clave,filtrar%2C%20agregar%20y%20resumir%20datos.}{\underline{Pandas: La Herramienta Esencial para Data Science en Python}}
+    \item \href{https://www.analyticslane.com/2021/07/15/pandas-cambiar-los-tipos-de-datos-en-los-dataframes/}{\underline{Pandas: Cambiar los tipos de datos en los DataFrames}}
+    \item \href{https://hevodata.com/learn/guide-to-effective-data-cleaning-tools-in-python/#:~:text=1.-,Pandas,your%20data%20for%20further%20exploration.}{\underline{\textit{Most Helpful Data Cleaning Tools in Python for 2025}}}
 \end{itemize}
 
 \end{document}
