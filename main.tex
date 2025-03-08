@@ -1,0 +1,48 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[catalan]{varioref}
+\usepackage{setspace}
+\input{sections/packages}
+\input{sections/frontPage}
+\onehalfspacing
+
+\begin{document}
+\thispagestyle{empty}
+	\begin{titlepage}
+		\maketitle
+		\thispagestyle{empty}
+	\end{titlepage}
+	\cleardoublepage
+	\newpage
+
+\thispagestyle{empty}
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+\pagenumbering{arabic}
+%\thispagestyle{empty}
+\section*{Exercici 1}
+\addcontentsline{toc}{section}{Exercici 1}
+\subsection*{Pregunta 1}
+\addcontentsline{toc}{subsection}{Pregunta 1}
+Per aplicar la tècnica de normalització caldria, en primer lloc, seleccionar aquelles variables numèriques a les quals volem aplicar la tècnica i després ajustar-les a una escala més reduïda, per tal de, fer-les més comprensibles. Típicament, les escales són entre -1.0 i 1.0 o entre 0.0 i 1.0.\\
+Per aplicar la tècnica de discretització cal, com en el cas anterior, seleccionar aquelles variables numèriques a les quals volem aplicar la tècnica. Seguidament, cal substituir els valors numèrics per una sèrie d'etiquetes les quals poden ser conceptuals o intervals. Aquesta tècnica permet consolidar un possible criteri d'agrupació de dades. Per exemple, un \textit{dataset} amb els resultats dels balanços d'empreses. Es podria substituir els resultats dels balanços per 'positiu', 'negatiu' i 'neutre' i, posteriorment, agrupar pel resultat del balanç.\\
+Aquestes tècniques són molt importants per als models de predicció, ja que permeten que les dades siguin més senzilles d'interpretar i això comporta que el rendiment del model sigui millor i que aquest tingui la capacitat de trobar patrons més fàcilment, és a dir, el model es fa més senzill.
+\subsection*{Pregunta 2}
+\addcontentsline{toc}{subsection}{Pregunta 2}
+
+\subsection*{Pregunta 3}
+\addcontentsline{toc}{subsection}{Pregunta 3}
+
+\subsection*{Pregunta 4}
+\addcontentsline{toc}{subsection}{Pregunta 4}
+
+\subsection*{Pregunta 5}
+\addcontentsline{toc}{subsection}{Pregunta 5}
+
+\subsection*{Pregunta 6}
+\addcontentsline{toc}{subsection}{Pregunta 6}
+
+\subsection*{Pregunta 7}
+\addcontentsline{toc}{subsection}{Pregunta 7}
+
+\end{document}
