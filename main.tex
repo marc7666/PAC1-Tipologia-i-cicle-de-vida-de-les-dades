@@ -27,7 +27,7 @@
 \subsection*{Pregunta 1}
 \addcontentsline{toc}{subsection}{Pregunta 1}
 Per aplicar la tècnica de normalització caldria, en primer lloc, seleccionar aquelles variables numèriques a les quals volem aplicar la tècnica i després ajustar-les a una escala més reduïda, per tal de, fer-les més comprensibles. Típicament, les escales són entre -1.0 i 1.0 o entre 0.0 i 1.0.\\
-Per aplicar la tècnica de discretització cal, com en el cas anterior, seleccionar aquelles variables numèriques a les quals volem aplicar la tècnica. Seguidament, cal substituir els valors numèrics per una sèrie d'etiquetes les quals poden ser conceptuals o intervals. Aquesta tècnica permet consolidar un possible criteri d'agrupació de dades. Per exemple, un \textit{dataset} amb els resultats dels balanços d'empreses. Es podria substituir els resultats dels balanços per 'positiu', 'negatiu' i 'neutre' i, posteriorment, agrupar pel resultat del balanç.\\
+Per aplicar la tècnica de discretització cal, com en el cas anterior, seleccionar aquelles variables numèriques a les quals volem aplicar la tècnica. Seguidament, cal substituir els valors numèrics per una sèrie d'etiquetes les quals poden ser conceptuals o intervals. Aquesta tècnica permet consolidar un possible criteri d'agrupació de dades. Per exemple, un \textit{dataset} amb els resultats dels balanços d'empreses. Es podria substituir els resultats dels balanços per ``positiu'', ``negatiu'' i ``neutre'' i, posteriorment, agrupar pel resultat del balanç.\\
 Aquestes tècniques són molt importants per als models de predicció, ja que permeten que les dades siguin més senzilles d'interpretar i això comporta que el rendiment del model sigui millor i que aquest tingui la capacitat de trobar patrons més fàcilment, és a dir, el model es fa més senzill.
 \subsection*{Pregunta 2}
 \addcontentsline{toc}{subsection}{Pregunta 2}
@@ -49,25 +49,25 @@ Les set tasques que permeten un major nivell d'abstracció en la visualització 
 \begin{figure}[H]
     \centering
     \includegraphics[scale = 0.2]{images/dashboard_ventas.png}
-    \caption{Exemple de la tasca 'Panorama general'}
+    \caption{Exemple de la tasca ``Panorama general'' \protect\hyperlink{ref:biblio-pan-gen}{[1]}}
     \label{fig:panorama_general}
 \end{figure}
 \begin{figure}[H]
     \centering
     \includegraphics[scale = 0.8]{images/zoom.png}
-    \caption{Exemple de la tasca 'Zoom'}
+    \caption{Exemple de la tasca ``Zoom'' \protect\hyperlink{ref:biblio-zoom}{[2]}}
     \label{fig:zoom}
 \end{figure}
 \begin{figure}
     \centering
     \includegraphics[scale = 0.7]{images/filtro.png}
-    \caption{Exemple de la tasca 'Filtratge'}
+    \caption{Exemple de la tasca ``Filtratge'' \protect\hyperlink{ref:biblio-filtre}{[3]}}
     \label{fig:filtratge}
 \end{figure}
 \begin{figure}
     \centering
     \includegraphics[scale =1.3]{images/8aa21944eef2879cea9080a2ae2fbcb98cec0ddf.png}
-    \caption{Exemple de la tasca 'Relcions'}
+    \caption{Exemple de la tasca ``Relcions'' \protect\hyperlink{ref:biblio-relacions}{[4]}}
     \label{fig:relacions}
 \end{figure}
 \newpage
@@ -81,28 +81,45 @@ La penúltima etapa és la visualització que té com a objectiu presentar les d
 Finalment, la publicació, que documenta els resultats. L'exemple seria la redacció d'un \textit{report} amb els resultats obtinguts.
 \subsection*{Pregunta 5}
 \addcontentsline{toc}{subsection}{Pregunta 5}
-La millor opció per a un sistema de monitoratge ambiental basat en sensors seria una base de dades no relacional a causa del fet que els sensors poden generar dades molt diverses. És a dir els sensors poden generar dades de tipus text, numèriques, imatges, so, etc. Per tant, considerant aquesta gran varietat que deriva en diferents esquemes per cada sensor es considera una millor opció una base de dades no relacional gràcies a la seva flexibilitat amb els esquemes de les dades i els seus tipus. A més, cal destacar que aquest tipus de bases de dades tenen un rendiment alt de lectura i escriptura. Per tant, en el sistema que es planteja, que captura volums de dades molt grans, és important poder consultar i inserir dades de la manera més ràpida possible. Finalment, un altre motiu pel qual una base de dades NoSQL és una millor opció és la capacitat d'escalar horitzontalment. És a dir, la capacitat d'afegir més recursos per a poder treballar amb volums de dades majors que en les bases de dades relacionals.
+La millor opció per a un sistema de monitoratge ambiental basat en sensors seria una base de dades no relacional a causa del fet que els sensors poden generar dades molt diverses. És a dir els sensors poden generar dades de tipus text, numèriques, imatges, so, etc. Per tant, considerant aquesta gran varietat que deriva en diferents esquemes per cada sensor es considera una millor opció una base de dades no relacional gràcies a la seva flexibilitat amb els esquemes de les dades i els seus tipus. A més, cal destacar que aquest tipus de bases de dades tenen un rendiment alt de lectura i escriptura. Per tant, en el sistema que es planteja, que captura volums de dades molt grans, és important poder consultar i inserir dades de la manera més ràpida possible. Finalment, un altre motiu pel qual una base de dades NoSQL és una millor opció és la capacitat d'escalar horitzontalment. És a dir, la capacitat d'afegir més recursos per a poder treballar amb volums de dades majors que en les bases de dades relacionals.\hyperlink{ref:biblio-nosql}{[5]}
 \subsection*{Pregunta 6}
 \addcontentsline{toc}{subsection}{Pregunta 6}
-La primera llibreria és \href{https://pandas.pydata.org/docs/}{\underline{Pandas}}. Les seves funcionalitats clau són la lectura i escriptura de dades, la manipulació de dades, el tractament de \textit{nulls}, l'agrupació, fusió i combinació i el tractament i anàlisi de \textit{time series}. Aquesta llibreria conté una funció per eliminar duplicats (\href{https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop_duplicates.html}{\underline{\textit{drop\_duplicates()}}}), una funció que es pot usar per a corregir errates tipogràfiques, tot i que no està dissenyada específicament per això(\href{https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.replace.html}{\underline{\textit{replace()}}}) i una funció per a la conversió de formats (\href{https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.astype.html}{\underline{\textit{astype()}}}).
-La segona eina és \href{https://pyjanitor-devs.github.io/pyjanitor/}{\underline{PyJanitor}}. És una llibreria basada en Pandas, per tant, les seves funcionalitats se centren simplificar algunes operacions de Pandas. Per eliminar duplicats es pot utilitzar la funció \textit{remove\_na()}. Per corregir errors tipogràfics i transformar formats, aquesta llibreria, no implementa cap funcionalitat especifia. En conseqüència, aquestes dues operacions s'haurien de realitzar amb Pandas o amb terceres llibreries.
+La primera llibreria és \href{https://pandas.pydata.org/docs/}{\underline{Pandas}}. Les seves funcionalitats clau són la lectura i escriptura de dades, la manipulació de dades, el tractament de \textit{nulls}, l'agrupació, fusió i combinació i el tractament i anàlisi de \textit{time series}. Aquesta llibreria conté una funció per eliminar duplicats (\href{https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop_duplicates.html}{\underline{\textit{drop\_duplicates()}}}), una funció que es pot usar per a corregir errates tipogràfiques, tot i que no està dissenyada específicament per això(\href{https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.replace.html}{\underline{\textit{replace()}}}) i una funció per a la conversió de formats (\href{https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.astype.html}{\underline{\textit{astype()}}}). \hyperlink{ref:biblio-pandas-basic}{[6]} \hyperlink{ref:biblio-pandas-transform}{[7]}
+La segona eina és \href{https://pyjanitor-devs.github.io/pyjanitor/}{\underline{PyJanitor}}. És una llibreria basada en Pandas, per tant, les seves funcionalitats se centren simplificar algunes operacions de Pandas. Per eliminar duplicats es pot utilitzar la funció \textit{remove\_na()}. Per corregir errors tipogràfics i transformar formats, aquesta llibreria, no implementa cap funcionalitat especifia. En conseqüència, aquestes dues operacions s'haurien de realitzar amb Pandas o amb terceres llibreries. \hyperlink{ref:biblio-data-cleaning}{[8]}
 \section*{Exercici 2}
 \addcontentsline{toc}{section}{Exercici 2}
 \subsection*{Pregunta 1}
 \addcontentsline{toc}{subsection}{Pregunta 1}
-Abans de procedir amb el \textit{web scraping}, caldrà tenir en compte que la violació de les normes de \textit{robots.txt}, pot comportar l'infringiment dels \textit{termes d'ús}. També, cal considerar la legislació vigent. En el cas del nostre país, el Regne d'Espanya, cal revisar dues lleis; la de propietat intel·lectual (\href{https://www.boe.es/buscar/pdf/1996/BOE-A-1996-8930-consolidado.pdf}{\underline{\textit{Real Decreto Legislativo 1/1996 de 12 de abril}}}) i la de protecció de dades personals i garantia de drets digitals (\href{https://www.boe.es/buscar/pdf/2018/BOE-A-2018-16673-consolidado.pdf}{\underline{\textit{Ley orgáica 3/2018 de 5 de diciembre}}}). Èticament, cal respectar la 'sagrada' voluntat del propietari de la \textit{web}, per això la millor manera de no infringir les normes del lloc \textit{web} i evitar incórrer en problemes legals és sol·licitar un permís per escrit del propietari on es demani consentiment per accedir a les dades. 
-
+Abans de procedir amb el \textit{web scraping}, caldrà tenir en compte que la violació de les normes de \textit{robots.txt}, pot comportar l'infringiment dels \textit{termes d'ús}. També, cal considerar la legislació vigent. En el cas del nostre país, el Regne d'Espanya, cal revisar dues lleis; la de propietat intel·lectual (\href{https://www.boe.es/buscar/pdf/1996/BOE-A-1996-8930-consolidado.pdf}{\underline{\textit{Real Decreto Legislativo 1/1996 de 12 de abril}}}) i la de protecció de dades personals i garantia de drets digitals (\href{https://www.boe.es/buscar/pdf/2018/BOE-A-2018-16673-consolidado.pdf}{\underline{\textit{Ley orgáica 3/2018 de 5 de diciembre}}}). Èticament, cal respectar la ``sagrada'' voluntat del propietari de la \textit{web}, per això la millor manera de no infringir les normes del lloc \textit{web} i evitar incórrer en problemes legals és sol·licitar un permís per escrit del propietari on es demani consentiment per accedir a les dades. 
+\subsection*{Pregunta 2}
+\addcontentsline{toc}{subsection}{Pregunta 2}
+Com a escenari es proposa un portal web que no permet l'accés a usuaris de països considerats dictatorials. Quan un usuari amb una adreça IP d'un d'aquests països vulgui accedir al lloc web, el servidor denegarà l'accés amb un codi d'error 403. \hyperlink{ref:biblio-http}{[9]} Aquest seria un escenari que dificulta el \textit{web scraping} pel mètode de càrrega de dades, ja que, s'està impedint a usuaris de localitzacions concretes accedir a les dades.\\
+Els possibles passos per superar aquesta barrera serien:
+\begin{itemize}
+    \item \textbf{IDENTIFICAR} que es tracta d'un bloqueig per localització intentant accedir al portal web des de diferents xarxes, atès que així es probaria d'accedir al portal amb diferents IP.
+    \item \textbf{CONFIGURAR} un servei VPN. Creant així la il·lusió d'estar en un altre païs.
+    \item \textbf{PROVAR} d'accedir al portal web des de diferents ubicacions fins a trobar un servidor d'un païs que permeti l'accés.
+    \item Un cop s'ha pogut accedir al portal web, \textbf{ESTUDIAR} els termes i condicions d'ús del lloc.
+    \item \textbf{CONFIGURACIÓ} d'excepcions per a \textit{timeouts} i \textit{broken conncetions}.
+    \item Configurar la profunditat de la pàgina per \textbf{EVITAR} els paranys d'aranya.
+\end{itemize}
+\subsection*{Pregunta 3}
+\addcontentsline{toc}{subsection}{Pregunta 3}
+\textbf{Modificació del \textit{user agent} i les capçaleres HTTP} $\longrightarrow$ Aquestes modificacions són una poderosa tècnica per simular que les peticions es fan des d'un navegador real i no des d'un d'un \textit{script}.\\
+\textbf{Espaiat de peticions HTTP} $\longrightarrow$ Fer que hi hagi un temps aleatori entre peticions "humanitza" el procés i fa que l'automatització de peticions sigui més difícil de detectar. Encara i així és la tècnica menys poderosa de les tres.\\
+\textbf{Ús de múltiples IPs} $\longrightarrow$ És la tècnica més poderosa de les 3, ja que, el fet de tenir múltiples IPs evita el ``baneig'' per fer massa peticions.
 \section*{Bibliografia}
 \addcontentsline{toc}{section}{Bibliografia}
 \begin{itemize}
-    \item \href{https://evotic.es/wp-content/uploads/2022/10/dashboard_ventas.png}{\underline{Imatge de l'exemple de 'Panorama general'}}
-    \item \href{https://r-charts.com/es/correlacion/zoom-grafico_files/figure-html/zoom.png}{\underline{Imatge de l'exemple de 'Zoom'}}
-    \item \href{https://cdn.exceltotal.com/wp-content/uploads/2014/02/filtros-en-excel-03.png}{\underline{Imatge de l'exemple de 'Filtratge'}}
-    \item \href{https://cdn.kastatic.org/ka-perseus-images/8aa21944eef2879cea9080a2ae2fbcb98cec0ddf.png}{\underline{Imatge de l'exemple de 'Relacions'}}
-    \item \href{https://www.arsys.es/blog/bases-de-datos-nosql-que-son-tipos-y-ventajas#tree-3}{\underline{Informació Bases de dades NoSQL}}
-    \item \href{https://iddigitalschool.com/bootcamps/que-es-pandas/#:~:text=Funcionalidades%20Clave,filtrar%2C%20agregar%20y%20resumir%20datos.}{\underline{Pandas: La Herramienta Esencial para Data Science en Python}}
-    \item \href{https://www.analyticslane.com/2021/07/15/pandas-cambiar-los-tipos-de-datos-en-los-dataframes/}{\underline{Pandas: Cambiar los tipos de datos en los DataFrames}}
-    \item \href{https://hevodata.com/learn/guide-to-effective-data-cleaning-tools-in-python/#:~:text=1.-,Pandas,your%20data%20for%20further%20exploration.}{\underline{\textit{Most Helpful Data Cleaning Tools in Python for 2025}}}
+    \item \hypertarget{ref:biblio-pan-gen}{} [1] \href{https://evotic.es/wp-content/uploads/2022/10/dashboard_ventas.png}{\underline{Imatge de l'exemple de ``Panorama general''}}
+    \item \hypertarget{ref:biblio-zoom}{} [2] \href{https://r-charts.com/es/correlacion/zoom-grafico_files/figure-html/zoom.png}{\underline{Imatge de l'exemple de ``Zoom''}}
+    \item \hypertarget{ref:biblio-filtre}{} [3] \href{https://cdn.exceltotal.com/wp-content/uploads/2014/02/filtros-en-excel-03.png}{\underline{Imatge de l'exemple de ``Filtratge''}}
+    \item \hypertarget{ref:biblio-relacions}{} [4] \href{https://cdn.kastatic.org/ka-perseus-images/8aa21944eef2879cea9080a2ae2fbcb98cec0ddf.png}{\underline{Imatge de l'exemple de ``Relacions''}}
+    \item \hypertarget{ref:biblio-nosql}{} [5] \href{https://www.arsys.es/blog/bases-de-datos-nosql-que-son-tipos-y-ventajas#tree-3}{\underline{Bases de datos NoSQL: qué son, tipos y ventajas}.}
+    \item \hypertarget{ref:biblio-pandas-basic}{} [6] \href{https://iddigitalschool.com/bootcamps/que-es-pandas/#:~:text=Funcionalidades%20Clave,filtrar%2C%20agregar%20y%20resumir%20datos.}{\underline{Pandas: La Herramienta Esencial para Data Science en Python}}
+    \item \hypertarget{ref:biblio-pandas-transform}{} [7] \href{https://www.analyticslane.com/2021/07/15/pandas-cambiar-los-tipos-de-datos-en-los-dataframes/}{\underline{Pandas: Cambiar los tipos de datos en los DataFrames}}
+    \item \hypertarget{ref:biblio-data-cleaning}{} [8] \href{https://hevodata.com/learn/guide-to-effective-data-cleaning-tools-in-python/#:~:text=1.-,Pandas,your%20data%20for%20further%20exploration.}{\underline{\textit{Most Helpful Data Cleaning Tools in Python for 2025}}}
+    \item \hypertarget{ref:biblio-http}{} [9] \href{https://developer.mozilla.org/es/docs/Web/HTTP/Status}{\underline{Codigos de estado de respuesta HTTP}}
 \end{itemize}
 
 \end{document}

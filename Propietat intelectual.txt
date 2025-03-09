@@ -1,0 +1,23 @@
+Bases de datos NoSQL: qué son, tipos y ventajas
+Article publicat el 12/01/2024 per Fernán García Zúñiga
+Estatus legal: Copyright Arsys
+
+Pandas: La Herramienta Esencial para Data Science en Python
+Article publicat el 21/06/2024 per Aurora
+Estatus legal: Copyright 2021 ID Bootcamps
+
+Pandas: Cambiar los tipos de datos en los DataFrames
+Article publicat el 15/07/2021 per Daniel Rodríguez
+Estatus legal: Copyright 2018-2025 Analytics Lane
+
+Most Helpful Data Cleaning Tools in Python for 2025
+Article publicat el 29/11/2024 per Riya Bothra
+Estatus legal: Copyright Hevo Data Inc. 2025
+
+Códigos de estado de respuesta HTTP
+Informació no disponible de la data de publicación ni de l'autor
+Estatus legal: Alguns fragments del contingut están protegides per copyright 1998-2025. Contingut disponible sota una llicència Creative Commons
+
+Els recursos protegits únicament per copyright, no permeten la copia literal del contingut de l'obra, però atès que en la redacción de la PAC en cap moment es realitza una copia literal del contingut de la web no hi ha cap tipus d'interferència.
+
+L'últim recurs extern disponible sota la llicència Creative Commons, tampoco resulta cap problema en el desenvolupament de a PAC.
